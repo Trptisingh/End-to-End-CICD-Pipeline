@@ -65,7 +65,7 @@ Before running this CI/CD project, install the following on your Jenkins master 
 
 ---
 
-#  **STEP–BY–STEP SETUP & COMMANDS (AS PROVIDED)**
+#  **STEP–BY–STEP SETUP & COMMANDS **
 
 ---
 
