@@ -1,6 +1,4 @@
-# 📘 **README.md — Jenkins + Docker + Python CI/CD Pipeline Project**
-
-# 🚀 Python Flask CI/CD Pipeline with Jenkins, Docker & Docker Hub
+# Python Flask CI/CD Pipeline with Jenkins, Docker & Docker Hub
 
 This repository showcases a complete **end-to-end CI/CD pipeline** using **Jenkins, Docker, Docker Compose, Docker Hub, and GitHub Webhooks** to automate the build, test, containerization, and deployment of a Python Flask application.
 
@@ -22,7 +20,7 @@ The following files are included in the repository (source code available in rep
 
 ---
 
-# 🧩 **What Each File Does**
+# **What Each File Does**
 
 ### **app.py**
 
@@ -61,17 +59,17 @@ A Declarative Jenkins Pipeline that:
 
 ---
 
-# ⚙️ **Prerequisites**
+#  **Prerequisites**
 
 Before running this CI/CD project, install the following on your Jenkins master machine:
 
 ---
 
-# 🔧 **STEP–BY–STEP SETUP & COMMANDS (AS PROVIDED)**
+#  **STEP–BY–STEP SETUP & COMMANDS (AS PROVIDED)**
 
 ---
 
-## ✅ **1. Install Java**
+## **1. Install Java**
 
 Jenkins needs Java to run.
 
@@ -81,7 +79,7 @@ sudo apt install openjdk-17-jre -y
 
 ---
 
-## ✅ **2. Install Jenkins**
+##  **2. Install Jenkins**
 
 ```
 sudo nano install.sh
@@ -99,7 +97,7 @@ sudo apt install jenkins -y
 
 ---
 
-## ✅ **3. Install Docker, Docker Compose & Python Tools**
+## **3. Install Docker, Docker Compose & Python Tools**
 
 ```
 sudo apt install docker.io -y
@@ -109,7 +107,7 @@ sudo apt install python3-pip -y
 
 ---
 
-## ✅ **4. Add Jenkins User to Docker Group**
+##  **4. Add Jenkins User to Docker Group**
 
 This allows Jenkins to run Docker commands.
 
@@ -121,7 +119,7 @@ sudo systemctl restart docker
 
 ---
 
-# 🧩 **CI/CD FLOW OVERVIEW**
+# **CI/CD FLOW OVERVIEW**
 
 1. GitHub push triggers webhook
 2. Jenkins Pipeline starts
@@ -134,7 +132,7 @@ sudo systemctl restart docker
 
 ---
 
-# 🐳 **Docker & Deployment Workflow**
+#  **Docker & Deployment Workflow**
 
 ### ✔ Build application image
 
@@ -150,7 +148,7 @@ All steps are automated through Jenkinsfile.
 
 ---
 
-# 🛠 **Jenkins Plugin Requirements**
+#  **Jenkins Plugin Requirements**
 
 Install the following plugins:
 
@@ -159,7 +157,7 @@ Install the following plugins:
 
 ---
 
-# 🔐 **Add Docker Hub Credentials in Jenkins**
+#  **Add Docker Hub Credentials in Jenkins**
 
 Path:
 **Jenkins → Credentials → Global Credentials**
@@ -172,7 +170,7 @@ Add new credential:
 
 ---
 
-# 🌐 **GitHub Webhook Setup**
+#  **GitHub Webhook Setup**
 
 GitHub → Repository → Settings → Webhooks → **Add Webhook**
 
@@ -187,7 +185,7 @@ Trigger: **Just the push event**
 
 ---
 
-# 🧩 **Jenkins Pipeline Setup**
+#  **Jenkins Pipeline Setup**
 
 ### **Step 1 — Create a Pipeline Job**
 
@@ -209,7 +207,7 @@ Pipeline → Definition → **Pipeline script from SCM**
 
 ---
 
-# ▶️ **First Build (Manual Trigger)**
+#  **First Build (Manual Trigger)**
 
 Click **Build Now**
 
@@ -223,7 +221,7 @@ Jenkins will:
 
 ---
 
-# 📄 **Pipeline Logs—Expected Output**
+#  **Pipeline Logs—Expected Output**
 
 During the run, you should see logs for:
 
@@ -236,7 +234,7 @@ During the run, you should see logs for:
 
 ---
 
-# 🔍 **Verify Running Containers**
+#  **Verify Running Containers**
 
 After deployment:
 
@@ -248,7 +246,7 @@ You should see container running on port **5000**.
 
 ---
 
-# 🌍 **Test Application**
+#  **Test Application**
 
 Open your browser:
 
@@ -260,7 +258,7 @@ You should see the Flask app responding.
 
 ---
 
-# 📸 **What You Will Learn**
+#  **What You Will Learn**
 
 This project teaches:
 
